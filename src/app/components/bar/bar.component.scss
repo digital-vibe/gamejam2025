@@ -1,0 +1,15 @@
+@use 'ui/borders';
+@use 'ui/colors';
+
+.bar {
+  display: flex;
+  gap: 2.4rem;
+  flex-wrap: wrap;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  margin: 1.2rem 0;
+  padding: 1.2rem 1.6rem;
+  border-radius: borders.$border-radius-s;
+  border: 1px solid colors.$text;
+}

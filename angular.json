@@ -31,7 +31,14 @@
                 "input": "public"
               }
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles",
+                "public"
+              ]
+            },
             "styles": [
+              "node_modules/normalize.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -98,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "5a7bb5ef-31f6-461b-adfb-11c19cbf0e6a"
   }
 }

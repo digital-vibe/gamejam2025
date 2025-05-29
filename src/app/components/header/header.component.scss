@@ -1,0 +1,38 @@
+@use 'ui/breakpoints';
+@use 'ui/colors';
+@use 'ui/grid';
+@use 'ui/fonts';
+
+.header {
+  max-width: grid.$container-size-l;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3.2rem;
+  background-color: colors.$background-dark;
+}
+
+.header__title {
+  color: colors.$accent;
+  background: linear-gradient(45deg, colors.$accent, colors.$info);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: fonts.$title-size-xxl;
+  line-height: fonts.$title-line-height-xxl;
+
+  @media (max-width: breakpoints.$breakpoint-xs) {
+    font-size: fonts.$title-size-l;
+    line-height: fonts.$title-line-height-l;
+  }
+}
+
+.header__subtitle {
+  color: colors.$text-light;
+  font-size: fonts.$title-size-m;
+  line-height: fonts.$title-line-height-m;
+
+  @media (max-width: breakpoints.$breakpoint-xs) {
+    font-size: fonts.$title-size-xs;
+    line-height: fonts.$title-line-height-xs;
+  }
+}

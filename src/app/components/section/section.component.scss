@@ -1,0 +1,14 @@
+@use 'ui/colors';
+
+.section {
+  padding: 1.6rem 0 3.2rem;
+  border-bottom: 2px dashed colors.$text;
+  margin-bottom: 2.4rem;
+}
+
+.section__title {
+  background: linear-gradient(colors.$accent, colors.$info);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: .8rem;
+}

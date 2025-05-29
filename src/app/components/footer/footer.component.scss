@@ -1,0 +1,14 @@
+@use 'ui/colors';
+@use 'ui/fonts';
+
+.footer {
+  padding: 2.4rem;
+
+  p {
+    text-wrap: balance;
+    color: colors.$text-dark;
+    text-align: center;
+    font-size: fonts.$text-size-s;
+  }
+}
+

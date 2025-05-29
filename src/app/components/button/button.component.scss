@@ -1,0 +1,28 @@
+@use 'ui/borders';
+
+.button {
+  padding: 12px 24px;
+  border:none;
+  border-radius: borders.$border-radius-s;
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.3);
+
+  &:hover {
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8), 0 0 30px rgba(255, 0, 255, 0.5);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.3), 0 0 10px rgba(255, 0, 255, 0.2);
+    transform: translateY(1px);
+  }
+}

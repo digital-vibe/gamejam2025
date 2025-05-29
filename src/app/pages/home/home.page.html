@@ -1,0 +1,71 @@
+<app-section name="Introduction">
+  <p>Welcome to the official homepage of the GameJam 2025!</p>
+  <br>
+  <p>Organized by <a target="_blank" href="https://digitalvibe.nl">Digital Vibe</a>, the GameJam 2025 runs for exactly
+    one week. GameDevs will use this week to create a game from scratch. On Monday they will use the randomizer below to
+    get their game topics and on Sunday they will have to present a playable game! The game will be played, scrutinized
+    & scored by family & friends using the scoresheet below. Exciting!</p>
+  <br>
+  <p>Will they be up for the challenge? Or will they perish in the flames of uncertainty. Time will tell...</p>
+</app-section>
+
+<app-section name="Info">
+  <app-bar>
+    <app-info name="Kick-off" description="Monday June 2nd"></app-info>
+    <app-info name="DemoDay" description="Sunday June 8th"></app-info>
+    <app-info name="GameDevs" description="Gleeglor, Digital Vibe"></app-info>
+  </app-bar>
+</app-section>
+
+<app-section name="Contestant #1">
+  <br>
+  <app-info name="Game Studio" description="Gleeglor"></app-info>
+  <app-info name="GameDev" description="Nick Voorham"></app-info>
+  <app-info name="Mission" description="&quot;Making games that are unique ofzo&quot;"></app-info>
+  <br>
+  <p>Find out more about Nick & Gleeglor at <a href="https://gleeglor.com">gleeglor.com</a></p>
+</app-section>
+
+<app-section name="Contestant #2">
+  <br>
+  <app-info name="Game Studio" description="Digital Vibe"></app-info>
+  <app-info name="GameDev" description="Coen Mooij"></app-info>
+  <app-info name="Mission" description="&quot;Spiritual Awakening through videogames&quot;"></app-info>
+  <br>
+  <p>Find out more about Coen & Digital Vibe at <a href="https://digitalvibe.com">digitalvibe.com</a></p>
+</app-section>
+
+<app-section name="Scoresheet">
+  <p>Games will be scored on a number of topics. These are:</p>
+  <br>
+  <app-info name="Gameplay" description="Is it compelling?"></app-info>
+  <app-info name="Vibe" description="Are you feeling it?"></app-info>
+  <app-info name="Usability" description="Is it easy to use/control?"></app-info>
+  <app-info name="Idea" description="How original is the concept?"></app-info>
+  <app-info name="Quality" description="Is the game stable and running smooth?"></app-info>
+  <app-info name="Content" description="Is there enough to do (potentially)?"></app-info>
+  <app-info name="Opinion" description="Did you like it?"></app-info>
+  <br>
+  <p>Each topic is graded from 1-5 stars.</p>
+</app-section>
+
+<app-section name="Randomizer">
+  <p>Use the button below to generate a theme + topic combination!</p>
+
+  <ng-container *ngIf="randomResults.length">
+    <br>
+    <h5>Your Random Combination</h5>
+    <app-bar>
+      <app-info name="Theme" [description]="randomResults[0]"></app-info>
+      <app-info name="Topic" [description]="randomResults[1]"></app-info>
+    </app-bar>
+  </ng-container>
+  <br>
+  <app-button tabindex="0" (keydown.enter)="onRandomize()" (click)="onRandomize()">Randomize</app-button>
+
+</app-section>
+<app-section name="Results">
+  <p>On Sunday June 8th results will be posted here with links to the games.</p>
+</app-section>
+
+

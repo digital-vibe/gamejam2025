@@ -1,0 +1,24 @@
+@use "ui/colors";
+@use "ui/fonts";
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  text-rendering: optimizelegibility;
+  font-size: 62.5%; // makes 1rem = 10px
+}
+
+body {
+  height: 100%;
+  line-height: fonts.$text-line-height-m;
+  color: colors.$text;
+  font-family: fonts.$text-font;
+  font-size: fonts.$text-size-m;
+}

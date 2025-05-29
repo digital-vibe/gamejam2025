@@ -1,0 +1,63 @@
+@use "ui/colors";
+@use "ui/fonts";
+
+ul {
+  margin-left: 2rem; // indent
+}
+
+a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: colors.$accent;
+  background: linear-gradient(60deg, colors.$accent, colors.$info);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+
+  &:hover {
+    filter: brightness(120%);
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: fonts.$title-font;
+  font-weight: 400;
+  text-wrap: balance;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+h1 {
+  line-height: fonts.$title-line-height-xl;
+  font-size: fonts.$title-size-xl;
+}
+
+h2 {
+  line-height: fonts.$title-line-height-l;
+  font-size: fonts.$title-size-l;
+}
+
+h3 {
+  line-height: fonts.$title-line-height-m;
+  font-size: fonts.$title-size-m;
+}
+
+h4 {
+  line-height: fonts.$title-line-height-s;
+  font-size: fonts.$title-size-s;
+}
+
+h5 {
+  line-height: fonts.$title-line-height-xs;
+  font-size: fonts.$title-size-xs;
+}
