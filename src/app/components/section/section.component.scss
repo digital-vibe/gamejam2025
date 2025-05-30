@@ -7,8 +7,9 @@
 }
 
 .section__title {
-  background: linear-gradient(colors.$accent, colors.$info);
+  background: linear-gradient(45deg, colors.$accent, colors.$info);
   background-clip: text;
+  width: fit-content;
   -webkit-text-fill-color: transparent;
   margin-bottom: .8rem;
 }

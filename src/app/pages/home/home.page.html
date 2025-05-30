@@ -47,6 +47,11 @@
   <app-info name="Opinion" description="Did you like it?"></app-info>
   <br>
   <p>Each topic is graded from 1-5 stars.</p>
+  <br>
+  <p>Click the button to start a review. You have to do it once per contestant (so twice).</p>
+  <br>
+  <app-button  tabindex="0" (keydown.enter)="onReview()" (click)="onReview()">Review</app-button>
+
 </app-section>
 
 <app-section name="Randomizer">
