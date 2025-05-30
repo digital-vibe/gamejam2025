@@ -22,4 +22,10 @@ export class HomePage {
 
     window.open(formUrl, '_blank');
   }
+
+  public onCalendar(): void {
+    const calendarUrl = 'https://calendar.app.google/o7SsjTaowzL5AXqd6';
+
+    window.open(calendarUrl, '_blank');
+  }
 }
